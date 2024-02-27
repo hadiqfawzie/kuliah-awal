@@ -10,7 +10,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/mahasiswa', (req, res) => {
-    res.json(`${mahasiswa}`)
+    //res.json(`${mahasiswa}`)
+    res.json(mahasiswa)
+
 });
 
 app.post('/', (req, res) => {
