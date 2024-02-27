@@ -2,13 +2,15 @@ const express = require('express');
 const app = express();
 const port = 5000;
 
+const mahasiswa = [{"nim" : "Sanjaya"}]
+
 
 app.get('/', (req, res) => {
     res.send('Get-Home Page')
 });
 
 app.get('/mahasiswa', (req, res) => {
-    res.send('Get Data mahasiswa')
+    res.send(`${mahasiswa}`)
 });
 
 app.post('/', (req, res) => {
